@@ -19,7 +19,7 @@ export default class hero extends Component {
     axios.get('https://janawarama.helakuru.lk/api/election/district',{headers:{'api-key': '0d9e15c7-3189-4402-8e3f-e5073ff00281'}})
     .then(response =>{
       console.log(response)
-      this.setState({
+      this.state({
         districtdata:response.data
       });
       
