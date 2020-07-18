@@ -238,6 +238,9 @@ export default class hero extends Component {
                 <Modal
 
                   show={this.state.show} onHide={this.handleClose}>
+                  <Modal.Header closeButton>
+                    
+                  </Modal.Header>
                   <Card style={{ width: '31rem' }}>
                     <Card.Img variant="top" src={this.state.candidateParty} />
                     <Card.Body>
