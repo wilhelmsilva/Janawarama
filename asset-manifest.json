@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/Janawarama/static/css/main.73650ad2.chunk.css",
-    "main.js": "/Janawarama/static/js/main.1443164b.chunk.js",
-    "main.js.map": "/Janawarama/static/js/main.1443164b.chunk.js.map",
+    "main.js": "/Janawarama/static/js/main.3d658a54.chunk.js",
+    "main.js.map": "/Janawarama/static/js/main.3d658a54.chunk.js.map",
     "runtime-main.js": "/Janawarama/static/js/runtime-main.560204ba.js",
     "runtime-main.js.map": "/Janawarama/static/js/runtime-main.560204ba.js.map",
-    "static/js/2.d09b0c27.chunk.js": "/Janawarama/static/js/2.d09b0c27.chunk.js",
-    "static/js/2.d09b0c27.chunk.js.map": "/Janawarama/static/js/2.d09b0c27.chunk.js.map",
+    "static/js/2.8e5e1873.chunk.js": "/Janawarama/static/js/2.8e5e1873.chunk.js",
+    "static/js/2.8e5e1873.chunk.js.map": "/Janawarama/static/js/2.8e5e1873.chunk.js.map",
     "index.html": "/Janawarama/index.html",
-    "precache-manifest.38c20df7ccd80751ca091daf3979fd2f.js": "/Janawarama/precache-manifest.38c20df7ccd80751ca091daf3979fd2f.js",
+    "precache-manifest.8f4bfebac0656492b3e2b0273dff86f1.js": "/Janawarama/precache-manifest.8f4bfebac0656492b3e2b0273dff86f1.js",
     "service-worker.js": "/Janawarama/service-worker.js",
     "static/css/main.73650ad2.chunk.css.map": "/Janawarama/static/css/main.73650ad2.chunk.css.map",
-    "static/js/2.d09b0c27.chunk.js.LICENSE.txt": "/Janawarama/static/js/2.d09b0c27.chunk.js.LICENSE.txt"
+    "static/js/2.8e5e1873.chunk.js.LICENSE.txt": "/Janawarama/static/js/2.8e5e1873.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.560204ba.js",
-    "static/js/2.d09b0c27.chunk.js",
+    "static/js/2.8e5e1873.chunk.js",
     "static/css/main.73650ad2.chunk.css",
-    "static/js/main.1443164b.chunk.js"
+    "static/js/main.3d658a54.chunk.js"
   ]
 }

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3f65081807fc14a72c4b5b140261a05c",
+    "revision": "2e7bfbabf8f37b662c37b7f7c30201f0",
     "url": "/Janawarama/index.html"
   },
   {
-    "revision": "74adcb705cdfff328b4f",
+    "revision": "3ef39ecc8a443f191a1f",
     "url": "/Janawarama/static/css/main.73650ad2.chunk.css"
   },
   {
-    "revision": "1624c6b8c898e750f43e",
-    "url": "/Janawarama/static/js/2.d09b0c27.chunk.js"
+    "revision": "d3f929e0f13f35d6b9d2",
+    "url": "/Janawarama/static/js/2.8e5e1873.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/Janawarama/static/js/2.d09b0c27.chunk.js.LICENSE.txt"
+    "url": "/Janawarama/static/js/2.8e5e1873.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "74adcb705cdfff328b4f",
-    "url": "/Janawarama/static/js/main.1443164b.chunk.js"
+    "revision": "3ef39ecc8a443f191a1f",
+    "url": "/Janawarama/static/js/main.3d658a54.chunk.js"
   },
   {
     "revision": "61a7b6c94a44e050c1a6",
