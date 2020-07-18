@@ -3,7 +3,11 @@ import Profile from '../profilecard/profilecard'
 import {
   Container,
   Accordion,
-  Alert
+  Alert,
+  Modal,
+  Button,
+  Card,
+  Badge
 } from 'react-bootstrap';
 
 
@@ -28,7 +32,12 @@ export default class hero extends Component {
       selectedPID: 0,
       selectedPNAME: '',
       //party Members array
-      partyMembers: []
+      partyMembers: [],
+      //modal option
+      show: false,
+      candidateName: '',
+      candidateId: 0,
+      candidateParty: ''
     }
   }
   componentDidMount() {
@@ -105,7 +114,8 @@ export default class hero extends Component {
         .then(response => {
           console.log(response.data.data[0])
           this.setState({
-            partyMembers: response.data.data[0].PARTY_CANDIDATES
+            partyMembers: response.data.data[0].PARTY_CANDIDATES,
+            candidateParty: response.data.data[0].PARTY_LOGO
           },
             () =>
               console.log(this.state.partyMembers));
@@ -114,6 +124,21 @@ export default class hero extends Component {
         .catch(error => console.log(error.response));
     }
   }
+  handleClose = () => {
+    this.setState({ show: false });
+  }
+  handleOpen(e) {
+    this.setState(
+      {
+        candidateId: e.C_NUMBER,
+        candidateName: e.C_NAME,
+
+        show: true
+
+
+      });
+  }
+
 
 
   render() {
@@ -192,14 +217,15 @@ export default class hero extends Component {
                     this.state.partyMembers.map(
                       (member) => (
                         <div>
+                          <Alert onClick={() => this.handleOpen(member)} key={member.C_ID} variant='primary'>
+                            {member.C_NUMBER}
+                            <Alert key={member.C_ID} variant='success'>
+                              {member.C_NAME}
+                            </Alert>
+                          </Alert>
 
-                        <Alert key={member.C_ID} variant='primary'>
-                          {member.C_NUMBER}
-                          <Alert key={member.C_ID} variant='success'>
-                          {member.C_NAME}
-                        </Alert>
-                        </Alert>
-                        
+
+
                         </div>
 
 
@@ -209,6 +235,25 @@ export default class hero extends Component {
                   }
 
                 </Accordion>
+                <Modal
+
+                  show={this.state.show} onHide={this.handleClose}>
+                  <Card style={{ width: '31rem' }}>
+                    <Card.Img variant="top" src={this.state.candidateParty} />
+                    <Card.Body>
+                      <Card.Title>{this.state.candidateName}</Card.Title>
+                      <Card.Text>
+                        <h1>
+
+                          <Badge variant="success">{this.state.candidateId}</Badge>
+                        </h1>
+
+                      </Card.Text>
+
+                    </Card.Body>
+                  </Card>
+                </Modal>
+
               </Container>
             </div>
           </div>
