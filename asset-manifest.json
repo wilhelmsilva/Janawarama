@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Janawarama/static/css/main.73650ad2.chunk.css",
-    "main.js": "/Janawarama/static/js/main.b970f3a6.chunk.js",
-    "main.js.map": "/Janawarama/static/js/main.b970f3a6.chunk.js.map",
+    "main.js": "/Janawarama/static/js/main.7bc574c3.chunk.js",
+    "main.js.map": "/Janawarama/static/js/main.7bc574c3.chunk.js.map",
     "runtime-main.js": "/Janawarama/static/js/runtime-main.560204ba.js",
     "runtime-main.js.map": "/Janawarama/static/js/runtime-main.560204ba.js.map",
     "static/js/2.ecb712d2.chunk.js": "/Janawarama/static/js/2.ecb712d2.chunk.js",
     "static/js/2.ecb712d2.chunk.js.map": "/Janawarama/static/js/2.ecb712d2.chunk.js.map",
     "index.html": "/Janawarama/index.html",
-    "precache-manifest.b39459b2406713907b5292bbd8c49b89.js": "/Janawarama/precache-manifest.b39459b2406713907b5292bbd8c49b89.js",
+    "precache-manifest.27ae32d0fc726ea4fdeb67724f380b71.js": "/Janawarama/precache-manifest.27ae32d0fc726ea4fdeb67724f380b71.js",
     "service-worker.js": "/Janawarama/service-worker.js",
     "static/css/main.73650ad2.chunk.css.map": "/Janawarama/static/css/main.73650ad2.chunk.css.map",
     "static/js/2.ecb712d2.chunk.js.LICENSE.txt": "/Janawarama/static/js/2.ecb712d2.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.560204ba.js",
     "static/js/2.ecb712d2.chunk.js",
     "static/css/main.73650ad2.chunk.css",
-    "static/js/main.b970f3a6.chunk.js"
+    "static/js/main.7bc574c3.chunk.js"
   ]
 }
