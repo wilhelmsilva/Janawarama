@@ -166,6 +166,7 @@ export default class hero extends Component {
                   {
                     this.state.districtdata.map(data =>
                       (
+                        // eslint-disable-next-line jsx-a11y/anchor-is-valid
                         <a onClick={() => this.clickedOnDistrict(data.D_ID, data.D_NAME)} key={data.D_ID} className='dropdown-item' value={data.D_NAME}>
                           {data.D_NAME}
                         </a>
@@ -189,6 +190,7 @@ export default class hero extends Component {
                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   {this.state.parties.map(data =>
                     (
+                      // eslint-disable-next-line jsx-a11y/anchor-is-valid
                       <a onClick={() => this.clickedOnParty(data.PARTY_ID, data.PARTY_NAME)} key={data.PARTY_ID} className='dropdown-item' value={data.PARTY_NAME}>
                         <img src={data.PARTY_LOGO} width="30px" alt="partylogo" height="30px">
                         </img>
