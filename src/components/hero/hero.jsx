@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Profile  from '../profilecard/profilecard'
+import '../hero/hero.css'
 
 
 //import { stat } from 'fs'
@@ -47,7 +48,7 @@ export default class hero extends Component {
               <div>
               <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                  <h1 class="display-4">චන්ද අපේක්ශකයන් පිලිබද නිවැරදි තොරතුරු දැනගනිමු</h1>
+                  <h1 class="display-5">චන්ද අපේක්ශකයන් පිලිබද නිවැරදි තොරතුරු දැනගනිමු</h1>
                   <p class="lead">Powered By Janawarama API</p>
                 </div>
               </div>
@@ -85,7 +86,7 @@ export default class hero extends Component {
                     </button>
                     
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      {this.state.parties.map(data =>(<a key='party' className='dropdown-item' href="#" value={data.PARTY_NAME}><img src={data.PARTY_LOGO} width="30px" height="30px"></img> {data.PARTY_NAME}</a>))}
+                      {this.state.parties.map(data =>(<a key='party' className='dropdown-item' href="#" value={data.PARTY_NAME}><img src={data.PARTY_LOGO} width="30px" height="30px"></img>  {data.PARTY_NAME}</a>))}
                     </div>
                     
                   </div>
