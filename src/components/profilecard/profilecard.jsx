@@ -6,7 +6,7 @@ export default class parties extends Component {
     render() {
         return (
             <div>
-                        <div class="profile-card-4 text-center"><img src="http://envato.jayasankarkr.in/code/profile/assets/img/profile-4.jpg" class="img img-responsive"/>
+                        <div class="profile-card-4 text-center"><img src="http://envato.jayasankarkr.in/code/profile/assets/img/profile-4.jpg" alt="img" class="img img-responsive"/>
                             <div class="profile-content">
                                 <div class="profile-name">John Doe
                                     <p>@johndoedesigner</p>
