@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Profile  from '../profilecard/profilecard'
 
 
 //import { stat } from 'fs'
@@ -74,6 +75,7 @@ export default class hero extends Component {
                   </div>
                   <div class="col-sm">
                   <div class="dropdown">
+                    
                     <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-brightness-high-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                       <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
@@ -83,13 +85,13 @@ export default class hero extends Component {
                     </button>
                     
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      {this.state.parties.map(data =>(<a key='party' className='dropdown-item' href="#" value={data.PARTY_NAME}>{data.PARTY_NAME}</a>))}
+                      {this.state.parties.map(data =>(<a key='party' className='dropdown-item' href="#" value={data.PARTY_NAME}><img src={data.PARTY_LOGO} width="30px" height="30px"></img> {data.PARTY_NAME}</a>))}
                     </div>
                     
                   </div>
                   </div>
                   <div class="col-sm">
-                  
+                    {Profile}
                   </div>
                   </div>
                   
