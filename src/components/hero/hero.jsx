@@ -79,7 +79,9 @@ export default class hero extends Component {
   clickedOnDistrict(e, name) {
     this.setState({
       selectedDID: e,
-      selectedDNAME: name
+      selectedDNAME: name,
+      selectedPID: 0,
+      partyMembers: []
     },
       () => {
         axios.get('https://janawarama.helakuru.lk/api/election/candidates',
@@ -139,7 +141,11 @@ export default class hero extends Component {
         }
       })
         .then(response => {
-          console.log(response.data.data[0])
+          console.log(response.data.data[0]);
+          if(response.data.data == null)
+          {
+            alert("null alert");
+          }
           this.setState({
             partyMembers: response.data.data[0].PARTY_CANDIDATES,
             candidateParty: response.data.data[0].PARTY_LOGO
