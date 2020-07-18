@@ -192,7 +192,8 @@ export default class hero extends Component {
                     (
                       // eslint-disable-next-line jsx-a11y/anchor-is-valid
                       <a onClick={() => this.clickedOnParty(data.PARTY_ID, data.PARTY_NAME)} key={data.PARTY_ID} className='dropdown-item' value={data.PARTY_NAME}>
-                        <img src={data.PARTY_LOGO} width="30px" alt="partylogo" height="30px">
+                        
+                        <img src={data.PARTY_LOGO} width="30px" height="30px">
                         </img>
                         {data.PARTY_NAME}
                       </a>))}
