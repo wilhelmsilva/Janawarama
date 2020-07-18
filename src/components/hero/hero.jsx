@@ -191,9 +191,16 @@ export default class hero extends Component {
                   {
                     this.state.partyMembers.map(
                       (member) => (
+                        <div>
+
                         <Alert key={member.C_ID} variant='primary'>
+                          {member.C_NUMBER}
+                          <Alert key={member.C_ID} variant='success'>
                           {member.C_NAME}
                         </Alert>
+                        </Alert>
+                        
+                        </div>
 
 
 
