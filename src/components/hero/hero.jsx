@@ -9,18 +9,17 @@ import axios from 'axios'
 
 
 export default class hero extends Component {
-  state={
-    districtdata : [
-      
-    ]
+  constructor(props){
+    super(props)
+    this.state = {districtdata : []}  
   }
-  
   componentDidMount(){
+    debugger
     axios.get('https://janawarama.helakuru.lk/api/election/district',{headers:{'api-key': '0d9e15c7-3189-4402-8e3f-e5073ff00281'}})
     .then(response =>{
       console.log(response)
-      this.state({
-        districtdata:response.data
+      this.setState({
+        districtdata:response.data.data
       });
       
     })
@@ -50,7 +49,7 @@ export default class hero extends Component {
                     </button>
                     
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      {this.state.districtdata.map(data =>(<a class='dropdown-item' href="#" value={data?.D_NAME}>{data.D_NAME}</a>))}
+                      {this.state.districtdata.map(data =>(<a className='dropdown-item' href="#" value={data.D_NAME}>{data.D_NAME}</a>))}
                       
                     </div>
                   </div>
@@ -61,12 +60,11 @@ export default class hero extends Component {
                   <div class="col-sm">
                   
                   </div>
-                  </div>
                   <div class="col-sm">
-                  <div class="dropdown">
-                    
+                  
                   </div>
                   </div>
+                  
                 </div>
               </div>
               
