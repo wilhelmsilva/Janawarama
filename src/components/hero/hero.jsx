@@ -217,11 +217,9 @@ export default class hero extends Component {
                     this.state.partyMembers.map(
                       (member) => (
                         <div>
-                          <Alert onClick={() => this.handleOpen(member)} key={member.C_ID} variant='primary'>
-                            {member.C_NUMBER}
-                            <Alert key={member.C_ID} variant='success'>
-                              {member.C_NAME}
-                            </Alert>
+                          <Alert className="alert alert-success" onClick={() => this.handleOpen(member)} key={member.C_ID} variant='primary'>
+                          {member.C_NAME}
+                           
                           </Alert>
 
 
@@ -234,19 +232,20 @@ export default class hero extends Component {
                     )
                   }
 
+                <h1>{}</h1>
+
                 </Accordion>
                 <Modal
 
                   show={this.state.show} onHide={this.handleClose}>
                   <Card style={{ width: '31rem' }}>
-                    <Card.Img variant="top" size="30%" src={this.state.candidateParty} />
+                    <Card.Img variant="top"  src={this.state.candidateParty} />
                     <Card.Body>
                       <Card.Title>{this.state.candidateName}</Card.Title>
                       <Card.Text>
-                        <h1>
-
+                        <h4>මනාප අංකය
                           <Badge variant="success">{this.state.candidateId}</Badge>
-                        </h1>
+                        </h4>
 
                       </Card.Text>
 
